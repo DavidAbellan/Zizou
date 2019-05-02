@@ -1,0 +1,208 @@
+* {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=Gugi');
+$azul:#1D377C;
+$azulclaro:#D6F1F0;
+
+header {
+    background: url("../imagen/1525510051_109534_1525527970_noticia_fotograma.jpg") no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+
+    div {
+        flex: 1;
+    }
+
+    h1 {
+        font-family: "Gugi";
+        color: $azulclaro;
+        font-size: 6em;
+
+    }
+
+    h2 {
+        font-family: "Gugi";
+        color: $azulclaro;
+        font-size: 2em;
+
+    }
+
+    nav a {
+        margin: 0 0.1em 0 0;
+    }
+    nav img:hover{
+        -webkit-box-shadow: -27px 20px 5px -4px rgba(0,0,0,0.75);
+-moz-box-shadow: -27px 20px 5px -4px rgba(0,0,0,0.75);
+box-shadow: -27px 20px 5px -4px rgba(0,0,0,0.75);
+ transition: 2s;
+    }
+
+    .rotulo {
+        font-family: "Lobster";
+        color: $azul;
+        font-size: 8em;
+        position: fixed;
+
+    }
+
+}
+
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "Gugi";
+    margin: 1em 0 1em 0em;
+
+    h1 {
+        color: $azul;
+        font-size: 2em;
+
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+}
+
+.galeria div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+    div {
+
+        width: 20em;
+        height: 20em;
+        margin: 2em 2em 1em 0;
+
+    }
+
+}
+
+.quiensoy div {
+    background: url("../imagen/zizu.jpg") no-repeat fixed;
+    width: 100vw;
+    height: 90vh;
+    margin-left: 5rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+
+    div {
+        background: white;
+        width: 30%;
+        height: 75%;
+        margin: 1em 5em 0 0;
+        padding-right: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        overflow: hidden;
+
+        h1 {
+            text-emphasis: bold;
+            text-decoration-line: underline;
+            padding-bottom: 2em;
+        }
+    }
+
+}
+
+.palmares div {
+    background-color: $azulclaro;
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 80%;
+
+    p {
+        padding-top: 2.5em;
+    }
+
+}
+
+img {
+    width: 2em;
+    height: 2em;
+    margin: 2em 2em 2em 2em;
+}
+
+footer {
+    background-color: $azul;
+    width: 100vw;
+
+    display: flex;
+    flex-flow: row nowrap;
+
+    div {
+        flex: 1;
+    }
+
+    h1 {
+        margin-top: 0.5em;
+        font-family: "Gugi";
+        color: $azulclaro;
+        font-size: 4em;
+    }
+
+    p {
+        font-size: 1.5em;
+        color: $azulclaro;
+        font-family: "Gugi";
+        margin: 1em 0 1em 0;
+    }
+
+}
+
+button {
+    margin: 2em 0 1em 2em;
+    background-color: $azulclaro;
+    transform: scale(1.5);
+}
+
+@media (max-width:500px) {
+    .palmares div div p:nth-child(6) {
+        font-size: 11px;
+
+    }
+
+    .rotulo {
+        display: none;
+    }
+
+    footer {
+
+        h1 {
+            font-size: 1.5em;
+        }
+    }
+    .quiensoy div{
+        background-position-x: 50%;
+    }
+
+    .quiensoy div div {
+        overflow-y: scroll;
+
+        p {
+            font-size: 9px;
+        }
+
+        h1 {
+            font-size: 13px;
+        }
+    }
+}

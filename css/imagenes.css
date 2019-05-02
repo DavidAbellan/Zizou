@@ -1,0 +1,33 @@
+#primera {
+    background: url(../imagen/3af46fa1b59a874a9eb51e78f16b8022.jpg);
+    background-size: cover;
+    background-position: 70%;
+}
+
+#segunda {
+    background: url(../imagen/1487701970_747942_1487703003_album_grande.jpg);
+    background-size: cover;
+}
+
+#tercera {
+    background: url(../imagen/1496227050_441973_1496227495_noticia_normal.jpg);
+    background-size: cover;
+    background-position: 50%;
+}
+
+#cuarta {
+    background: url(../imagen/zidane-leyenda.jpg);
+    background-size: cover;
+}
+
+#quinta {
+    background: url(../imagen/Zinedine-Zidane.jpg) no-repeat;
+    background-size: cover;
+    background-position: 35%;
+}
+
+#sexta {
+    background: url(../imagen/58.jpg);
+    background-size: cover;
+    background-position: 70%;
+}
